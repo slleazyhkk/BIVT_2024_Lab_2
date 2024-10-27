@@ -326,7 +326,7 @@ public class Program
         {
             cnt++;
             double.TryParse(Console.ReadLine(), out a);
-            if (a>=norm) answer++;
+            if (a<=norm) answer++;
         }
         Console.WriteLine(answer);
         // end
@@ -421,7 +421,7 @@ public class Program
         {
             n--;
             double.TryParse(Console.ReadLine(), out way);
-            if (way > best)
+            if (way < best)
             {
                 best = way;
             }
